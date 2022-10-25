@@ -1,3 +1,8 @@
+// Prototypes - a template object
+
+// __proto__ =  property that references the "datatype" prototype; the prototype includes all the methods available to the datatype.
+	// __proto__ is the one object that is a prototype for all instances of that type of object
+
 //String.prototype is a "template object" for every single string.
 //We could go crazy and add our own method called yell...
 String.prototype.yell = function() {
