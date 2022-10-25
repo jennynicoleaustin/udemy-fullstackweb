@@ -24,7 +24,6 @@ tweetsContainer.addEventListener('click', (e) => {
 //If you want to check to make sure the right target was clicked you can use....
 tweetsContainer.addEventListener('click', (e) => {
     e.target.nodeName === 'li' && e.target.remove(); // this is the same as "if (e.target.nodeName === 'li) {e.target.remove()}
-
 })
 
 
