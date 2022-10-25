@@ -20,3 +20,15 @@
 
 // Leave the next line, the form must be assigned to a variable named 'form' in order for the exercise test to pass
 const form = document.querySelector('form');
+form.addEventListener('submit', function (e) {e.preventDefault(); addItem(itemInput.value, qtyInput.value)
+
+})
+const ul = document.querySelector('#list')
+const qtyInput = form.elements.item(1)
+const itemInput = form.elements.item(0)
+const addItem = (itemInput, qtyInput) => {
+    const newItem = document.createElement('li')
+    newItem.innerText = `${qtyInput} ${itemInput}`
+    ul.appendChild(newItem)
+    form.reset()
+}
