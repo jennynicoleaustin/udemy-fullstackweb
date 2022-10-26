@@ -24,4 +24,4 @@ function rollDie(numSides = 6) { // parameter = default value
 function greet(person, msg = "Hey there", punc = '!') { // if you have a parameter with no default parameter then that needs to come AFTER the parameter without a default parameter.
     console.log(`${msg}, ${person}${punc}`)
 }
-
+//89DDFF C792EA, C3E88D, F78C6C

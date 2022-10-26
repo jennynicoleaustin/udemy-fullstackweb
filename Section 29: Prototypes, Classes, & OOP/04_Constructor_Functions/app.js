@@ -1,4 +1,8 @@
-// This is a Constructor Function...
+//methods are not defined on all the objects in js.
+
+//Constructor function is a function that helps you to build objects.
+
+// This is a Constructor Function... but without the new keyword it will not create the object.
 function Color(r, g, b) {
 	this.r = r;
 	this.g = g;
@@ -18,6 +22,12 @@ Color(35, 60, 190); //undefined
 // 3. Passes the newly created object from Step 1 as the this context;
 // 4. Returns this if the function doesn't return its own object.
 
+
+// For a function to work on the new object we need to define the function on the color prototype ( making it a method).
+	// then we can call the method on the newly constructed object
+		// This is basically like building a class and methods in java.
+
+// **** don't forget you need the function keyword with the keyword this. an arrow function will not work
 Color.prototype.rgb = function() {
 	const { r, g, b } = this;
 	return `rgb(${r}, ${g}, ${b})`;

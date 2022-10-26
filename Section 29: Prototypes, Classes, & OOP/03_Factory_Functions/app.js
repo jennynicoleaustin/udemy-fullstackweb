@@ -1,3 +1,7 @@
+// OOP = organizing our code and structuring it by breaking it up into distinct patterns of objects
+
+//Factory functions = a way to package functions into a reusable
+	// This is not the common way to accomplish this... constructor functions are the better way
 //This functions makes and returns an object every time it is called.
 // The resulting objects all follow the same "recipe"
 function makeColor(r, g, b) {
