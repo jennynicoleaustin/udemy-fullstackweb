@@ -1,3 +1,5 @@
+// Classes must contain a constructor, then define the methods inside the class.
+
 class Color {
 	constructor(r, g, b, name) {
 		this.r = r;
