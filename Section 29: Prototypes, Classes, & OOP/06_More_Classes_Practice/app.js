@@ -1,3 +1,5 @@
+// You are able to call a function directly inside the constructor, then the result of that function is stored in the function.
+
 class Color {
 	constructor(r, g, b, name) {
 		this.r = r;
